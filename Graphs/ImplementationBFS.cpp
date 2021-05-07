@@ -21,6 +21,23 @@ void print(int** edges, int n, int sv, bool* visited){
     }
 }
 
+bool hasPath(int** edges, int n, int sv, int en, bool* visited){
+    visited[sv]=1;
+    if(edges[sv][en] == 1){
+            return true;
+    }
+    for(int i=0; i<n; i++){
+        if(visited[i]==0){
+            if(hasPath(edges, n, i, en, visited)){
+                return true;
+            }
+        }    
+    }
+
+    return false;
+
+}
+
 void printBFS(int** edges, int n, int sv){
     queue<int> pendingVertives;
     bool* visited = new bool[n];
@@ -73,11 +90,18 @@ int main() {
         visited[i]=0;
     }
  //   print(edges, n, sv, visited);
-    printBFS(edges, n, sv);
+ //   printBFS(edges, n, sv);
+    if(hasPath(edges, n, 0, 7, visited)){
+        cout<<"YES"<<endl;
+    }else{
+        cout<<"NO"<<endl;
+    }
+ //   cout<<hasPath(edges, n, 0, 7);
 }
 
 //Input
-/*8
+/*
+8
 9
 0 4
 0 5
@@ -87,4 +111,5 @@ int main() {
 1 3
 5 6
 3 6
-6 7*/
+6 7
+*/
