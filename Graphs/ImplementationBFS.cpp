@@ -1,3 +1,13 @@
+// Steps to implement BFS.
+//     1. Select the staring vertex.
+//     2. Add that veretex in the queue, and mark that visited.
+//     3. Run a loop. While(queue is no empty).
+//         3a. Copy the first element(e) of queue and pop it out.
+//         3b. Print that copy.
+//         3c. For(All adjacent nodes of "e")
+//                 if not visited -> mark visted -> push in queue.
+
+
 #include<iostream>
 #include<queue>
 using namespace std;
