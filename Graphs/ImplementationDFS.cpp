@@ -1,3 +1,11 @@
+// Steps for Implementation DSF.
+//     1. Select a node -> DFS(node);
+// in DFS function.
+//     2. Mark that visted -> Print it
+//     3. For(all adjacent nodes)
+//         if(not visited)
+//             call DFS(child node)
+   
 #include<iostream>
 using namespace std;
 
