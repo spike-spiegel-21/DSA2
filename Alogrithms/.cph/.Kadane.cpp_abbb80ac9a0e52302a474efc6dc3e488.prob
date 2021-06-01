@@ -1,0 +1,1 @@
+{"name":"Local: Kadane","url":"e:\\CP Library\\DSA\\DSA2\\Alogrithms\\Kadane.cpp","tests":[{"id":1622546105839,"input":"1\n8\n-5 -1 5 -3 -1 2 3 -6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP Library\\DSA\\DSA2\\Alogrithms\\Kadane.cpp","group":"local","local":true}
